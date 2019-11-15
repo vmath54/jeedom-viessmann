@@ -1,0 +1,6 @@
+. Mettre le nom des commandes, plutot que les ID des virtuels
+-------------------------------------------------------------
+suggere par jpty
+// $cmd = cmd::byId($virtualCMDs['BoilerTemperature']);
+$cmd = cmd::byEqLogicIdCmdName($params['virtualID'],'BoilerTemperature');
+$virtual->checkAndUpdateCmd($cmd, $GetBoilerTemperature);
